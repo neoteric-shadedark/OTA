@@ -1,0 +1,30 @@
+* Updated to LA.QSSI.16.0.r1-12900-qssi.0
+* Bumped security patch level to 2026-05-05
+* Improved freeform windowing: fixed minimize, proper desktop mode handling, and added LMOFreeform service
+* Updated LMOFreeform Sidebar to latest version
+* Updated GameBar to latest version
+* Updated BCR (Basic Call Recorder) to latest version
+* Added color temperature and saturation sliders in display settings
+* Added statusbar brightness control
+* Added toggle for compact heads-up notifications
+* Added quick settings tile for volume panel
+* Added option to hide power menu on secure lockscreen
+* Added Play Integrity Fix (PIF) properties viewer, updater, and master disable switch
+* Added automatic PIF property fetching
+* Improved spoofing logic: separate toggles for game and Google Photos spoofing, dropped fake spoof option, added cleanup and security gates
+* Added option to block PairIP license check activity
+* Added option to hide navigation IME bar
+* Added option to limit minimum auto brightness percentage
+* Added preference to reset auto brightness adjustment
+* Added wallpaper dimming with night features
+* Added HDR brightness intensity control and HDR display boost toggle
+* Moved Extra Dim to display settings
+* Linked smallest width options in display settings
+* Exposed radio info dialer code (*#*#4636#*#*)
+* Fixed invalid private DNS help text when URI is missing
+* Added more private DNS providers: AdGuard, Cloudflare, and others
+* Added new fonts: Fira Sans, HK Grotesk, Recursive, Source Sans, MiSans, NotoSans, Volte Round, Google Sans Flex, Space Grotesk
+* Added RiceBall icon shape overlay
+* Fixed QS tile font variable
+* Fixed display mode confusion on video mode panels when screen turns off
+* Dropped CertifiedPropsOverlay and default keybox overlay
