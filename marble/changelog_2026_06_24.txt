@@ -1,0 +1,37 @@
+- Updated system to LA.QSSI.16.0.r1-13900-qssi.0
+- Bumped security patch level to 2026-06-05
+- Updated device blobs and firmware to OS3.0.4.0.VMRMIXM
+- Updated Audio Hal, Agm and Arpal-lx to LA.VENDOR.1.0.r1-29700-WAIPIO.QSSI16.0
+- Kernel: 5.10.252-beryl-e4a0376665-m1aa5fb6d-d3c821dc3: fixed IIO PD channel validation, slave reg_status channel mapping, and incorrect enum comparison in Xiaomi BQ27Z561 battery driver
+- Bring back Dolby Vision support (Works in Netflix and other OTT apps)
+- Switched to newer standalone Dolby Vision stack from Android 16 for improved colour accuracy and dynamic range
+- Fixed Dolby Audio crash loop on boot before first unlock
+- Tried to fix media volume drop after notification playback
+- Fixed VoIP audio going completely silent after switching audio output devices
+- Fixed audio ducking behavior and interruptions during active VoIP calls
+- Restored VoIP stream volume when a concurrent media app releases audio focus
+- Fixed HDMI CEC volume control setting being incorrectly ignored
+- Fixed per-app volume UX
+- Added QTI software audio decoders — ALAC (Apple Lossless), APE (Monkey's Audio), FLAC (Free Lossless Audio Codec) and DSD (Direct Stream Digital, used in high-res SACD recordings) — enabling lossless and high-resolution audio playback natively
+- Allowed customising volume stream steps
+- Removed safe media volume management restrictions
+- Removed restrictions for system audio recording
+- Don't play sound effects if the stream is muted
+- Reduced redundant volume broadcasts
+- Removed mono channel from voip_rx audio profile
+- Arpal-lx: allowed setting initial master gain for stereo streams, fixed volume payload size, guarded mic occlusion events and voice calibration key values, reverted a ResourceManager activeStreams fix that caused regressions
+- Increased initial stereo master volume for marble
+- Fixed camera flashlight not working due to conflict with torch control
+- Introduced preferred network tile in Quick Settings with 4G/5G switching, replacing the old tile
+- Switched to globally accessible Captive Portal and NTP servers
+- Build reversed aptxacu locally for improved aptX settings UI
+- Set uclamp tuning for Taro (SM8450) platform
+- Avoided redundant property_get() calls on every gralloc buffer allocation for reduced overhead per frame
+- Limited dex2oat CPU utilisation and unset scheduler rate limits
+- Introduced per-app spoofing support with custom spoof device selection
+- Added secondary display support in AodNotifier
+- Disabled FRP
+- Fixed memory leaks in Sensors via shared_ptr
+- Properly handle HIDL return values
+- Keyhandler now ignores non-fingerprint input devices
+- Power menu from Quick Settings only launches if explicitly enabled
