@@ -1,0 +1,9 @@
+- Updated system to LA.QSSI.16.0.r1-14000-qssi.0
+- Bumped security patch level to 2026-07-05
+- Updated audio, agm, arpal-lx and gps to LA.VENDOR.1.0.r1-29900-WAIPIO.QSSI16.0
+- Kernel: 5.10.257-beryl-f699d4bec4-m1dbdec88-d3c821dc3, built with updated Clang 22.0.2 (r596125)
+- Fixed fast charging (Credits: @White_Rose_01R)
+- Added support for more public storage filesystems (NTFS USB OTG support)
+- Added a setting to allow any app to request audio focus
+- Improved Custom ROM Hide with better app filtering, stability and detection bypasses
+- Blocked untrusted apps from performing Lineage service checks
